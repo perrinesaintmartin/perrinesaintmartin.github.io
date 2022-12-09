@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<title>TypoMorpho</title>
+	
+	<!-- FAVICON -->
+	<link rel="icon" href="typo/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="typo/favicon.ico" type="image/x-icon" />
+	
+	<style>
+		
+		:root 
+			{
+			--typesize: 1rem;
+			--fraction: calc( 96vw / 12 )
+			}
+	
+
+		/* @font-face */
+		
+		@font-face 
+		    {
+		    font-family:'Relief';
+		    src: url('typo/ReliefSingleLineOutline-Regular.woff2') format('woff2');
+		    font-weight:normal;
+		    font-style:normal;
+		    }
+		
+		
+		::selection 
+			{
+			color:black;
+			background:red;
+			}
+		
+		::-moz-selection 
+			{
+			color:black;
+			background:red;
+			}
+		
+		* 	{
+			margin:0; 
+			padding:0;
+			}
+		
+		body 
+			{
+			background:white;
+			text-rendering:optimizeLegibility;
+			}
+		
+		#all 
+			{
+			width: 96vw;
+			max-width: 1200px;
+			margin:2vw auto;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap: 1rem;
+			}    
+
+		figure img 
+			{
+			max-width:100%;
+			height:auto;
+			margin-bottom:1vw;
+			}
+
+/* Grid 12 columns (= 1fr, 8.333%) each column, gutter (1rem) */
+		
+		
+		.grid_1 
+		    {
+		    grid-column: span 1;
+		    }
+
+		.grid_2 
+		    {
+		    grid-column: span 2;
+		    }
+
+		.grid_3 
+		    {
+		    grid-column: span 3;
+		    }
+
+		.grid_4 
+		    {
+		    grid-column: span 4;
+		    }
+
+		.grid_5 
+		    {
+		    grid-column: span 5;
+		    }
+
+		.grid_6 
+		    {
+		    grid-column: span 6;
+		    }
+
+		.grid_7 
+		    {
+		    grid-column: span 7;
+		    }		    
+
+		.grid_8 
+		    {
+		    grid-column: span 8;
+		    }	
+
+		.grid_9 
+		    {
+		    grid-column: span 9;
+		    }
+
+		.grid_10 
+		    {
+		    grid-column: span 9;
+		    }	
+
+		.grid_11 
+		    {
+		    grid-column: span 9;
+		    }		    	    
+
+		.grid_12 
+		    {
+		    grid-column: 1 / span 12;
+		    }
+		.grid_2-8
+		    {
+		    grid-column: 2/ span 7;
+		    }
+
+	
+/* Hierarchy */
+
+
+		h1, h2, p
+			{
+			font-weight:normal;
+			font-style:normal;
+			text-align:left;
+			color:black;
+			font-feature-settings: "kern", "liga", "onum";
+			}
+
+
+		h1 
+			{
+			font-family:'Relief',sans-serif;
+			font-size:calc( var(--typesize)*1.6875);
+			line-height:1.4;
+			color:inherit;
+			}
+
+		h1+h1 
+			{
+			text-indent:var(--fraction);
+			}
+		
+		h1 a 
+			{
+			color:inherit;
+			text-decoration:none;
+			}
+		
+		h1 a:hover 
+			{
+			color:silver;
+			text-decoration:none;
+			}
+		
+		h2 
+			{
+			font-family:'Relief',sans-serif;
+			font-size:calc( var(--typesize)*1.6875);
+			line-height:1.4;
+			color:inherit;
+			}
+
+		h2+h2 
+			{
+			text-indent:var(--fraction);
+			}
+		
+		h2 a 
+			{
+			color:inherit;
+			text-decoration:none;
+			}
+		
+		h2 a:hover 
+			{
+			color:silver;
+			text-decoration:none;
+			}
+				
+		hr 
+			{
+			display:none;
+			}
+		
+		p 
+			{
+			font-family:'Relief',sans-serif;
+			font-size:calc(var(--typesize)*1.6875);
+			line-height:1.4;
+			color:inherit;
+			}
+		
+		p+p {
+			text-indent:var(--fraction);
+			}
+		
+		p a {
+			color:black;
+			text-decoration:none;
+			}
+		
+		p a:hover 
+			{
+			color:silver;
+			text-decoration:none;
+			}
+		
+		span{}
+		
+
+
+/* Responsive */
+		
+		@media screen and (max-width:760px) 
+				{
+			
+			:root 
+				{
+				--typesize: 1rem;
+				--fraction: calc( 96vw / 12 )
+				}
+
+			#all 
+				{
+				width: 96vw;
+				max-width: 96vw;
+				grid-gap: 1rem;
+				}
+			
+			h1, h2, p
+				{
+				font-size:calc(var(--typesize) * 1);
+				}
+			
+			.grid_1,
+			.grid_2,
+			.grid_3,
+			.grid_4,
+			.grid_5,
+			.grid_6,
+			.grid_7,
+			.grid_8,
+			.grid_9,
+			.grid_10,
+			.grid_11 {
+				grid-column: span 12;
+				}
+		}
+		
+	</style>
+		
+
+</head>
+	
+<body>
+
+<div id="top"></div>
+
+<div id="all">
+
+
+<!-- Infos -->	
+
+
+
+
+				<div class="grid_12">
+				
+					
+					<h1><a href="mailto:perrinesaintm@gmail.com">Perrine Saint Martin</a></h1>
+					<h1>/</h1>
+					<hr />
+
+					<p><a href="https://www.instagram.com/perrine_saint_martin/" target="_blank">@perrine_saint_martin</a> (teaching)</p>
+					<p>/</p>
+					<hr />
+
+					<p><a href="https://www.instagram.com/typomorpho_design/" target="_blank">@typomorpho_design</a> (graphic design projects)</p>
+					<p>/</p>
+					<hr />
+
+					<!-- <p><a href="#top" class="gotop" title="Top">&#8593;</a></p> -->
+
+				</div>
+
+
+	<!-- Icono 
+	
+	<div class="grid_12">
+
+	<figure>
+	<img src="icono/xxx.jpg" title="xxx" alt="xxx">
+	</figure>
+
+	</div> -->
+
+
+		</body>
+
+			<script src="script/jquery.min.js"></script> 
+			<script src="script/jquery.easing.1.3.js"></script> 
+
+
+			<script>
+				
+				$(document).ready(function(){
+					
+					$('a.gotop').click(function(){ 
+						var elementClicked = $(this).attr("href");
+						var destination = $(elementClicked).offset().top;
+						$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1500,'easeInOutExpo' );
+						return false;
+					});			
+					
+					
+					$('a.goinfos').click(function(){ 
+						var elementClicked = $(this).attr("href");
+						var destination = $(elementClicked).offset().top;
+						$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1500,'easeInOutExpo' );
+						return false;
+					});
+						
+					$('a.afigure').click(function(){
+						$(this).children('.figure').toggleClass('bfigure');
+						return false;
+					});
+					
+				});
+
+			</script>
+	
+		</html>
+		
